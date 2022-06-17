@@ -2,7 +2,8 @@ import React from "react";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import style from "../style/style.scss";
-import colibri from "../assets/colibri.png"
+import colibri from "../assets/contenido/colibri.png";
+import portada from "../assets/contenido/portada.png";
 
 
 const Inicio = () => {
@@ -23,7 +24,12 @@ const Inicio = () => {
             </Navbar>
             <section>
                 <div>
-                    
+                    <main className="Content">
+                        <div className="portada">
+                            <h1>Comida Tradicional</h1>
+                            <img id="portada-inicio" src={ portada } alt="portada" />
+                        </div>
+                    </main>
                 </div>
             </section>
 

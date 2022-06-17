@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import colibri from "../assets/colibri.png";
+import colibri from "../assets/contenido/colibri.png";
 
 const Nosotros = () => {
 

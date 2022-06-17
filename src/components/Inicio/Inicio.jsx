@@ -25,10 +25,14 @@ const Inicio = () => {
             <section>
                 <div>
                     <main className="Content">
-                        <div className="portada">
-                            <h1>Comida Tradicional</h1>
-                            <img id="portada-inicio" src={ portada } alt="portada" />
+                        <section className="portada">
+                        <div>
+                        <div className="text-cont-portada">
+                            <h1 className="text-cont">Comida Tradicional Mexicana</h1>
+                                <p className="text-cont-p">"La comida es nuestro arte"</p>
                         </div>
+                        </div>
+                        </section>
                     </main>
                 </div>
             </section>

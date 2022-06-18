@@ -2,6 +2,8 @@ import React from "react";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import colibri from "../assets/contenido/colibri.png";
+import style from "../Nosotros/Nosotros.scss";
+import equipo from "../assets/contenido/equipo.png";
 
 const Nosotros = () => {
 
@@ -18,9 +20,22 @@ const Nosotros = () => {
                     </Nav>
                 </Container>
             </Navbar>
-            <section>
+
+            <section className="ntros">
+                <div className="ntros-tx">
+                    <h1 >Taiyari Tradicional</h1>
+                    <p>Somos un proyecto de emprendimeinto con responsabilidad social que busca preservar la cultura gastronomica tradicional en México.</p>
+                    <p>Ofrecemos productos de la más alta calidad 100% Mexicanos,promoviendo el consumo nacional.</p>
+                </div>
+            </section>
+
+            <section className="equipo">
+                <div className="equi-text">
+                    <h1>Forma parte</h1>
+                    <p>Sumate al proyecto, llena el formulario y cuentanos tus habilidades y destresas que pudieran hacer crecer a nuestra familia.</p>
+                </div>
                 <div>
-                    
+                    <img id="equi" src={ equipo } alt="" />
                 </div>
             </section>
 

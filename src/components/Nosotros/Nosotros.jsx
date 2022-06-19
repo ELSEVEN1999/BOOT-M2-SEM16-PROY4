@@ -24,15 +24,15 @@ const Nosotros = () => {
             <section className="ntros">
                 <div className="ntros-tx">
                     <h1 >Taiyari Tradicional</h1>
-                    <p>Somos un proyecto de emprendimeinto con responsabilidad social que busca preservar la cultura gastronomica tradicional en México.</p>
-                    <p>Ofrecemos productos de la más alta calidad 100% Mexicanos,promoviendo el consumo nacional.</p>
+                    <p>Somos un proyecto de emprendimeinto con responsabilidad social que busca preservar la cultura gastrónomica tradicional en México.</p>
+                    <p>Ofrecemos productos de la más alta calidad 100% Mexicanos, promoviendo el consumo nacional.</p>
                 </div>
             </section>
 
             <section className="equipo">
                 <div className="equi-text">
                     <h1>Forma parte</h1>
-                    <p>Sumate al proyecto, llena el formulario y cuentanos tus habilidades y destresas que pudieran hacer crecer a nuestra familia.</p>
+                    <p>Súmate al proyecto, llena el formulario y cuentanos tus habilidades y destresas que pueden hacer crecer a nuestra familia.</p>
                 </div>
                 <div>
                     <img id="equi" src={ equipo } alt="" />

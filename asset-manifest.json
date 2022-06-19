@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/BOOT-M2-SEM16-PROY4/static/css/main.21c576b2.css",
+    "main.js": "/BOOT-M2-SEM16-PROY4/static/js/main.9a0a5066.js",
+    "static/js/787.c7e77ea6.chunk.js": "/BOOT-M2-SEM16-PROY4/static/js/787.c7e77ea6.chunk.js",
+    "static/media/portada.png": "/BOOT-M2-SEM16-PROY4/static/media/portada.e6acefecc0574b281e4b.png",
+    "static/media/nosotros.png": "/BOOT-M2-SEM16-PROY4/static/media/nosotros.63aded9dad73ca0de645.png",
+    "static/media/bienvenido.png": "/BOOT-M2-SEM16-PROY4/static/media/bienvenido.858cf28e9f0ead5213a2.png",
+    "static/media/Menu.png": "/BOOT-M2-SEM16-PROY4/static/media/Menu.760d3a92b4fc59250815.png",
+    "static/media/promocion.png": "/BOOT-M2-SEM16-PROY4/static/media/promocion.749b3e0f4f21bc0c7eb2.png",
+    "static/media/equipo.png": "/BOOT-M2-SEM16-PROY4/static/media/equipo.2b0014d574fb2e5d9b52.png",
+    "static/media/colibri.png": "/BOOT-M2-SEM16-PROY4/static/media/colibri.cdb4db96bd2d730459ca.png",
+    "static/media/entregas.png": "/BOOT-M2-SEM16-PROY4/static/media/entregas.45f03116ac082e824d7d.png",
+    "static/media/logo.svg": "/BOOT-M2-SEM16-PROY4/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/BOOT-M2-SEM16-PROY4/index.html",
+    "main.21c576b2.css.map": "/BOOT-M2-SEM16-PROY4/static/css/main.21c576b2.css.map",
+    "main.9a0a5066.js.map": "/BOOT-M2-SEM16-PROY4/static/js/main.9a0a5066.js.map",
+    "787.c7e77ea6.chunk.js.map": "/BOOT-M2-SEM16-PROY4/static/js/787.c7e77ea6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21c576b2.css",
+    "static/js/main.9a0a5066.js"
+  ]
+}

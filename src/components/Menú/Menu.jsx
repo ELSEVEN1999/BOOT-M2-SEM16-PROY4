@@ -1,7 +1,8 @@
 import React from "react";
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Card, Col, Button, Row} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import colibri from "../assets/contenido/colibri.png";
+import bebidas from "../assets/bebidas/bebidas.js"
 
 const Menú = () => {
 
@@ -18,9 +19,30 @@ const Menú = () => {
                     </Nav>
                 </Container>
             </Navbar>
+
             <section>
                 <div>
-                    
+
+                <Row>
+                {
+                    bebidas.map((bebidas, i) => {
+                        return (
+                            <Col key={i}>
+                                <Card className="cards" key={i}>
+                                    <Card.Img className="cardImg" src={bebidas.img} />
+                                    <Card.Body>
+                                        <Card.Title className="cardTitle">{bebidas.Nombre}</Card.Title>
+                                        <Card.Text className="cardText">{bebidas.Descripcion}</Card.Text>
+                                        <Link to={`/${bebidas.id}`}>
+                                            <Button className="boton" >Completo</Button>
+                                        </Link>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        )
+                    })
+                }
+                 </Row>   
                 </div>
             </section>
 

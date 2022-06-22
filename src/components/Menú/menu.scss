@@ -1,0 +1,12 @@
+.g-4 {
+    align-items: center;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 25%;
+}
+
+.cards {
+    object-fit: cover;
+    border: #ffa100;
+}

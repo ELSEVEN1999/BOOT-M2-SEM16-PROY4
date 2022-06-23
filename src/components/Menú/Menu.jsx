@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container, Card, Col, Button, Row} from 'react-bootstrap';
+import { Navbar, Nav, Container, Card, Col, Button, Row, ListGroup, ListGroupItem} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import colibri from "../assets/contenido/colibri.png";
 import bebidas from "../assets/bebidas/bebidas.js";
@@ -7,6 +7,7 @@ import entradas from "../assets/entradas/entradas.js";
 import sopas from "../assets/sopas/sopas.js";
 import postres from "../assets/postres/postres.js";
 import platillos from "../assets/platillos/platillos.js";
+import seccion from "../assets/contenido/seccion.png"
 import style from "./menu.scss"
 
 
@@ -27,23 +28,29 @@ const Menú = () => {
             </Navbar>
 
             <section>
-                <div>
-                    <div className="platillos">
+                <section className="men-sec">
+                    <div>
                         <h1>Platillos</h1>
+                        <img id="im-s" src={ seccion } alt="seccion" />
                     </div>
+                </section>
+                <div>
                 <Row className="g-4">
                 {
                     platillos.map((platillos, i) => {
                         return (
                             <Col key={i}>
-                                <Card className="cards" style={{ width: '25rem'}} key={i}>
+                                <Card className="cards" key={i}>
                                     <Card.Img className="cardImg" src={platillos.img} />
                                     <Card.Body>
-                                        <Card.Title className="cardTitle">{platillos.Nombre}</Card.Title>
-                                        <Card.Text className="cardText">{platillos.Descripcion}</Card.Text>
+                                         <ListGroup  className="list">
+                                            <Card.Header className="cardTitle" fs="10px"><h1>{platillos.Nombre}</h1></Card.Header>
+                                            <ListGroup.Item className="cardText">{platillos.Descripcion}</ListGroup.Item>
+                                            <ListGroup.Item className="cardText">{platillos.Tamaño}</ListGroup.Item>
                                         <Link to={`/${platillos.id}`}>
-                                            <Button className="boton" >Completo</Button>
+                                            <Button className="boton" variant="utline-primaory" size="sm" >Completo</Button>
                                         </Link>
+                                        </ListGroup>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -55,10 +62,13 @@ const Menú = () => {
             </section>
 
             <section>
-                <div>
-                    <div className="sopas">
+                <section className="men-sec">
+                    <div>
                         <h1>Sopas</h1>
+                        <img id="im-s" src={ seccion } alt="seccion" />
                     </div>
+                </section>
+                <div>
                 <Row className="g-4">
                 {
                     sopas.map((sopas, i) => {
@@ -67,11 +77,14 @@ const Menú = () => {
                                 <Card className="cards" key={i}>
                                     <Card.Img className="cardImg" src={sopas.img} />
                                     <Card.Body>
-                                        <Card.Title className="cardTitle">{sopas.Nombre}</Card.Title>
-                                        <Card.Text className="cardText">{sopas.Descripcion}</Card.Text>
+                                         <ListGroup className="list" >
+                                            <Card.Header className="cardTitle"><h1>{sopas.Nombre}</h1></Card.Header>
+                                            <ListGroup.Item className="cardText">{sopas.Descripcion}</ListGroup.Item>
+                                            <ListGroup.Item className="cardText">{sopas.Tamaño}</ListGroup.Item>
                                         <Link to={`/${sopas.id}`}>
-                                            <Button className="boton" >Completo</Button>
+                                            <Button className="boton" variant="utline-primaory" size="sm" >Completo</Button>
                                         </Link>
+                                        </ListGroup>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -83,10 +96,13 @@ const Menú = () => {
             </section>
 
             <section>
-                <div>
-                    <div className="entradas">
+                <section className="men-sec">
+                    <div>
                         <h1>Entradas</h1>
+                        <img id="im-s" src={ seccion } alt="seccion" />
                     </div>
+                </section>
+                <div>
                 <Row className="g-4">
                 {
                     entradas.map((entradas, i) => {
@@ -95,11 +111,14 @@ const Menú = () => {
                                 <Card className="cards" key={i}>
                                     <Card.Img className="cardImg" src={entradas.img} />
                                     <Card.Body>
-                                        <Card.Title className="cardTitle">{entradas.Nombre}</Card.Title>
-                                        <Card.Text className="cardText">{entradas.Descripcion}</Card.Text>
+                                         <ListGroup className="list">
+                                            <Card.Header className="cardTitle"><h1>{entradas.Nombre}</h1></Card.Header>
+                                            <ListGroup.Item className="cardText">{entradas.Descripcion}</ListGroup.Item>
+                                            <ListGroup.Item className="cardText">{entradas.Tamaño}</ListGroup.Item>
                                         <Link to={`/${entradas.id}`}>
-                                            <Button className="boton" >Completo</Button>
+                                            <Button className="boton" variant="utline-primaory" size="sm" >Completo</Button>
                                         </Link>
+                                        </ListGroup>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -111,10 +130,13 @@ const Menú = () => {
             </section>
 
             <section>
-                <div>
-                    <div className="postres">
+                <section className="men-sec">
+                    <div>
                         <h1>Postres</h1>
+                        <img id="im-s" src={ seccion } alt="seccion" />
                     </div>
+                </section>
+                <div>
                 <Row className="g-4">
                 {
                     postres.map((postres, i) => {
@@ -123,11 +145,14 @@ const Menú = () => {
                                 <Card className="cards" key={i}>
                                     <Card.Img className="cardImg" src={postres.img} />
                                     <Card.Body>
-                                        <Card.Title className="cardTitle">{postres.Nombre}</Card.Title>
-                                        <Card.Text className="cardText">{postres.Descripcion}</Card.Text>
+                                         <ListGroup className="list">
+                                            <Card.Header className="cardTitle"><h1>{postres.Nombre}</h1></Card.Header>
+                                            <ListGroup.Item className="cardText">{postres.Descripcion}</ListGroup.Item>
+                                            <ListGroup.Item className="cardText">{postres.Tamaño}</ListGroup.Item>
                                         <Link to={`/${postres.id}`}>
-                                            <Button className="boton" >Completo</Button>
+                                            <Button className="boton" variant="utline-primaory" size="sm" >Completo</Button>
                                         </Link>
+                                        </ListGroup>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -139,10 +164,13 @@ const Menú = () => {
             </section>
 
             <section>
-                <div>
-                    <div className="bebidas">
+                <section className="men-sec">
+                    <div>
                         <h1>Bebidas</h1>
+                        <img id="im-s" src={ seccion } alt="seccion" />
                     </div>
+                </section>
+                <div>
                 <Row className="g-4">
                 {
                     bebidas.map((bebidas, i) => {
@@ -151,11 +179,14 @@ const Menú = () => {
                                 <Card className="cards" key={i}>
                                     <Card.Img className="cardImg" src={bebidas.img} />
                                     <Card.Body>
-                                        <Card.Title className="cardTitle">{bebidas.Nombre}</Card.Title>
-                                        <Card.Text className="cardText">{bebidas.Descripcion}</Card.Text>
+                                         <ListGroup className="list">
+                                            <Card.Header className="cardTitle"><h1>{bebidas.Nombre}</h1></Card.Header>
+                                            <ListGroup.Item className="cardText">{bebidas.Descripcion}</ListGroup.Item>
+                                            <ListGroup.Item className="cardText">{bebidas.Tamaño}</ListGroup.Item>
                                         <Link to={`/${bebidas.id}`}>
-                                            <Button className="boton" >Completo</Button>
+                                            <Button className="boton" variant="utline-primaory" size="sm" >Completo</Button>
                                         </Link>
+                                        </ListGroup>
                                     </Card.Body>
                                 </Card>
                             </Col>

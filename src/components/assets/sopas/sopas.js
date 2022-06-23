@@ -9,46 +9,31 @@ export default [
     {
         "img":consome,
         "Nombre":"Consome de pollo",
-        "Tamaño":{
-            "Chico":"$40",
-            "Grande":"$70"
-        },
+        "Tamaño":"Chico $40 | Grande $70",
         "Descripcion":"Consome de pollo acompañado con verdura y garbanzos"
     },
     {
         "img":crema,
         "Nombre":"Crema de elote",
-        "Tamaño":{
-            "Chico":"$40",
-            "Grande":"$70"
-        },
+        "Tamaño":"Chico $40 | Grande $70",
         "Descripcion":"Crema de elote acompañada con galletines"
     },
     {
         "img":espagueti,
-        "Nombre":"Espagueti a la mexicana",
-        "Tamaño":{
-            "Chico":"$40",
-            "Grande":"$70"
-        },
+        "Nombre":"Espagueti",
+        "Tamaño":"Chico $40 | Grande $70",
         "Descripcion":"Espagueti a la mexicana, acompalada con crema y queso"
     },
     {
         "img":sopAzteca,
         "Nombre":"Sopa Azteca",
-        "Tamaño":{
-            "Chico":"$50",
-            "Grande":"$80"
-        },
+        "Tamaño":"Chico $50 | Grande $80",
         "Descripcion":"Tradicional sopa de tortilla acompañada con aguacate, queso, chicharron, crema y salsa"
     },
     {
         "img":sopVerdura,
         "Nombre":"Sopa de verdura",
-        "Tamaño":{
-            "Chico":"40",
-            "Grande":"70"
-        },
+        "Tamaño":"Chico $40 | Grande $70",
         "Descripcion":"Tradicional postre de leche con canela"
     }
 ]

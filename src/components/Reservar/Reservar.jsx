@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import style from "./Reservar.scss";
 import colibri from "../assets/contenido/colibri.png";
 
-const Reservar = () => {
+
+const Reservar = ( props ) => {
+    const usersData = [
+        { id: 1, name: 'Tania', username: 'floppydiskette' },
+        { id: 2, name: 'Craig', username: 'siliconeidolon' },
+        { id: 3, name: 'Ben', username: 'benisphere' },
+      ]
+    
+      const [users, setUsers] = useState(usersData);
+      
     return (
         <div>
             <Navbar className="header">
@@ -18,9 +27,51 @@ const Reservar = () => {
                     </Nav>
                 </Container>
             </Navbar> 
+
+            
             <div className="reservar">
                 <h1 className="tx-r">Reservaciones</h1>
             </div>
+
+            <section className="agenda">
+            <div className="reserv">
+                <h1>Reservar</h1>
+            </div>
+
+            <div className="tabla">
+                <div className="reservaviones">
+                    <h1>Reservaciones</h1>
+                </div>
+                <table >
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {props.users.length > 0 ? (
+                        props.users.map((user) => (
+                        <tr key={user.id}>
+                        <td>{user.name}</td>
+                        <td>{user.username}</td>
+                        <td>
+                        <button className="button muted-button">Edit</button>
+                        <button className="button muted-button">Delete</button>
+                        </td>
+                    </tr>
+                     ))
+                     ) : (
+                        <tr>
+                        <td colSpan={3}>No users</td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
+                </div>
+                </section>             
+
             <section>
                 <div>
                     <footer className="footer">

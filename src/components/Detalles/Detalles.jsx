@@ -1,14 +1,16 @@
-import React, {Fragment, useState} from "react";
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import React from "react";
+import { Navbar, Nav, Container, Button, ListGroup, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import style from "../style/style.scss";
 import colibri from "../assets/contenido/colibri.png";
-import style from "./Delibery.scss";
+import platillos from "../assets/platillos/platillos.js";
 
-const Delibery = () => {
+
+const Detalles = () => {
 
     return(
         <div>
-            <Navbar className="header">
+             <Navbar className="header">
                 <Container className="container">
                     <Navbar.Brand id="brand" href="/">Taiyari "Hecho con el corazón"</Navbar.Brand>
                     <Nav className="me-auto">
@@ -18,30 +20,27 @@ const Delibery = () => {
                         <Nav.Link className="a" as={Link} to="/Delibery">Delibery</Nav.Link>
                     </Nav>
                 </Container>
-            </Navbar>
-            <Fragment>
-                <div className="port-pedido">
-                    <h1>!Haz tu pedido¡</h1>
-                    <p>Llena nuestro formulario y en breve te enviaremos el numero de pedido</p>
-                </div>
-                <form className="row m-5">
-                    <div className="col-md-3">
-                        <input
-                        placeholder="Nombre"
-                        className="form-control"
-                        ></input>
-                    </div>
-                    <div className="col-md-3">
-                        <input
-                        placeholder="Nombre"
-                        className="form-control"
-                        ></input>
-                    </div>
-                    <div className="col-md-3">
-                        <button className="btn" variant="utline-primaory" size="sm">enviar</button>
-                    </div>
-                </form>
-                </Fragment>
+            </Navbar> 
+            <section>
+    
+            </section>
+            {
+                platillos.map((platillos, i) => {
+                return (
+                <Card className="cards" key={i}>
+                    <Card.Img className="cardImg" src={platillos.img} />
+                        <Card.Body>
+                            <ListGroup  className="list">
+                             <Card.Header className="cardTitle" fs="10px"><h1>{platillos.Nombre}</h1></Card.Header>
+                                    <ListGroup.Item className="cardText">{platillos.Tamaño}</ListGroup.Item>
+                                        <Button as={ Link } to={"/Delibery"} className="boton" variant="utline-primaory" size="sm" >Delibery</Button>
+                                        </ListGroup>
+                                    </Card.Body>
+                </Card>
+                )
+        })
+}
+                
             <section>
                 <div>
                     <footer className="footer">
@@ -70,9 +69,8 @@ const Delibery = () => {
                     </footer>
                 </div>
             </section>
-
         </div>
     )
 };
 
-export default Delibery ;
+export default Detalles;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import colibri from "../assets/contenido/colibri.png";
 import style from "../Nosotros/Nosotros.scss";
@@ -33,6 +33,7 @@ const Nosotros = () => {
                 <div className="equi-text">
                     <h1>Forma parte</h1>
                     <p>Súmate al proyecto, llena el formulario y cuentanos tus habilidades y destresas que pueden hacer crecer a nuestra familia.</p>
+                    <Button className="btn" variant="utline-primaory" size="lg" as={ Link } to="/Bolsa">!Haz click¡</Button>
                 </div>
                 <div>
                     <img id="equi" src={ equipo } alt="" />

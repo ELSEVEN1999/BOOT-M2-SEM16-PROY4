@@ -20,7 +20,7 @@ export default [
     },
     {
         "img":helado,
-        "Nombre":"Helado de aguacate",
+        "Nombre":"Helado",
         "Tamaño":"Chico $20 | Grande $35",
         "Descripcion":"Cremoso helado de aguacate"
     },

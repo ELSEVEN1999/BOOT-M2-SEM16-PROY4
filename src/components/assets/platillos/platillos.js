@@ -13,12 +13,14 @@ import sopes from "../platillos/sopes.png";
 
 export default [
     {
+        id:"Chilaquiles",
         "img":chilaquiles,
         "Nombre":"Chilaquiles",
         "Tamaño":"Chico $70 | Grande $90",
         "Descripcion":"Chilaquiles tradicionales verdes o rojos, acomompañados con pollo, crema y queso"
     },
     {
+        id:"Enchiladas",
         "img":enchiladas,
         "Nombre":"Enchiladas",
         "Tamaño":"Chico $70 | Grande $90",

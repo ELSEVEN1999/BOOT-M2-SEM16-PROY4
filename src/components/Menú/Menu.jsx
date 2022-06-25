@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container, Card, Col, Button, Row, ListGroup, ListGroupItem} from 'react-bootstrap';
+import { Navbar, Nav, Container, Card, Col, Button, Row, ListGroup} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import colibri from "../assets/contenido/colibri.png";
 import bebidas from "../assets/bebidas/bebidas.js";
@@ -12,7 +12,6 @@ import style from "./menu.scss"
 
 
 const Menú = () => {
-
     return(
         <div>
             <Navbar className="header">
@@ -45,10 +44,10 @@ const Menú = () => {
                                     <Card.Body>
                                          <ListGroup  className="list">
                                             <Card.Header className="cardTitle" fs="10px"><h1>{platillos.Nombre}</h1></Card.Header>
-                                            <ListGroup.Item className="cardText">{platillos.Descripcion}</ListGroup.Item>
                                             <ListGroup.Item className="cardText">{platillos.Tamaño}</ListGroup.Item>
                                         <Link to={`/${platillos.id}`}>
-                                            <Button className="boton" variant="utline-primaory" size="sm" >Completo</Button>
+                                            <Button src={platillos.id} className="boton" variant="utline-primaory" size="sm" >Detalles</Button>
+                                            <Button as={ Link } to={"/Delibery"} className="boton" variant="utline-primaory" size="sm" >Delibery</Button>
                                         </Link>
                                         </ListGroup>
                                     </Card.Body>
@@ -79,10 +78,10 @@ const Menú = () => {
                                     <Card.Body>
                                          <ListGroup className="list" >
                                             <Card.Header className="cardTitle"><h1>{sopas.Nombre}</h1></Card.Header>
-                                            <ListGroup.Item className="cardText">{sopas.Descripcion}</ListGroup.Item>
                                             <ListGroup.Item className="cardText">{sopas.Tamaño}</ListGroup.Item>
                                         <Link to={`/${sopas.id}`}>
-                                            <Button className="boton" variant="utline-primaory" size="sm" >Completo</Button>
+                                            <Button className="boton" variant="utline-primaory" size="sm" >Detalles</Button>
+                                            <Button as={ Link } to={"/Delibery"} className="boton" variant="utline-primaory" size="sm" >Delibery</Button>
                                         </Link>
                                         </ListGroup>
                                     </Card.Body>
@@ -113,10 +112,10 @@ const Menú = () => {
                                     <Card.Body>
                                          <ListGroup className="list">
                                             <Card.Header className="cardTitle"><h1>{entradas.Nombre}</h1></Card.Header>
-                                            <ListGroup.Item className="cardText">{entradas.Descripcion}</ListGroup.Item>
                                             <ListGroup.Item className="cardText">{entradas.Tamaño}</ListGroup.Item>
                                         <Link to={`/${entradas.id}`}>
-                                            <Button className="boton" variant="utline-primaory" size="sm" >Completo</Button>
+                                            <Button className="boton" variant="utline-primaory" size="sm" >Detalles</Button>
+                                            <Button as={ Link } to={"/Delibery"} className="boton" variant="utline-primaory" size="sm" >Delibery</Button>
                                         </Link>
                                         </ListGroup>
                                     </Card.Body>
@@ -147,10 +146,10 @@ const Menú = () => {
                                     <Card.Body>
                                          <ListGroup className="list">
                                             <Card.Header className="cardTitle"><h1>{postres.Nombre}</h1></Card.Header>
-                                            <ListGroup.Item className="cardText">{postres.Descripcion}</ListGroup.Item>
                                             <ListGroup.Item className="cardText">{postres.Tamaño}</ListGroup.Item>
                                         <Link to={`/${postres.id}`}>
-                                            <Button className="boton" variant="utline-primaory" size="sm" >Completo</Button>
+                                            <Button className="boton" variant="utline-primaory" size="sm" >Detalles</Button>
+                                            <Button as={ Link } to={"/Delibery"} className="boton" variant="utline-primaory" size="sm" >Delibery</Button>
                                         </Link>
                                         </ListGroup>
                                     </Card.Body>
@@ -181,10 +180,10 @@ const Menú = () => {
                                     <Card.Body>
                                          <ListGroup className="list">
                                             <Card.Header className="cardTitle"><h1>{bebidas.Nombre}</h1></Card.Header>
-                                            <ListGroup.Item className="cardText">{bebidas.Descripcion}</ListGroup.Item>
                                             <ListGroup.Item className="cardText">{bebidas.Tamaño}</ListGroup.Item>
                                         <Link to={`/${bebidas.id}`}>
-                                            <Button className="boton" variant="utline-primaory" size="sm" >Completo</Button>
+                                            <Button className="boton" variant="utline-primaory" size="sm" >Detalles</Button>
+                                            <Button as={ Link } to={"/Delibery"} className="boton" variant="utline-primaory" size="sm" >Delibery</Button>
                                         </Link>
                                         </ListGroup>
                                     </Card.Body>

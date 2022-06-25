@@ -1,0 +1,21 @@
+.reservar {
+    background-image: url(../assets/contenido/Reservaciones.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    height: 250px;
+    margin: 15px auto;
+    border-radius: 30px;
+    box-shadow: rgb(0, 0, 0, 0.5) 0px 8px 8px, rgb(0, 0, 0) 0px 5px 5px;
+    padding: 10% 10%;
+}
+
+.tx-r {
+    color: #ffa100;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 50px;
+    width: 350px;
+    font-size: 50px;
+}

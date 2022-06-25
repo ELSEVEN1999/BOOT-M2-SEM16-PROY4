@@ -300,3 +300,25 @@
 .btn_4 {
     font-size: 20px;
 }
+
+.ubicacion {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url(../assets/contenido/ubicacion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 15% 30%;
+    box-shadow: rgb(0, 0, 0, 0.8) 0px 5px 5px, rgb(0, 0, 0, 0.8) 0px 8px 8px;
+}
+
+.t-ub {
+    background-color: #ffffffe0;
+    color: #ff6b00;
+    width: 650px;
+    height: 200px;
+    font-size: 22px;
+    border-radius: 30px;
+    box-shadow: rgb(0, 0, 0, 0.8) 5px 5px 5px, rgb(0, 0, 0, 0.8) 8px 8px 8px;
+}

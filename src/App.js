@@ -9,7 +9,8 @@ import Menu from './components/Menú/Menu';
 import Nosotros from './components/Nosotros/Nosotros';
 import Delivery from './components/Delivery/Delibery';
 import Bolsa from './components/Bolsa/Bolsa';
-import Detalles from './components/Detalles/Detalles'
+import Detalles from './components/Detalles/Detalles';
+import Reservar from './components/Reservar/Reservar.jsx';
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='Delibery' element={< Delivery />} />
           <Route path='Bolsa' element={< Bolsa />} />
           <Route path='Detalles' element={<Detalles />} />
+          <Route path='Reservar' element={<Reservar />} />
 
         </Routes>
       </BrowserRouter>

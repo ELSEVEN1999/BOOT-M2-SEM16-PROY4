@@ -17,7 +17,7 @@ const Inicio = () => {
     return(
 
         <div>
-            <Navbar className="header">
+           <Navbar className="header">
                 <Container className="container">
                     <Navbar.Brand id="brand" href="/">Taiyari "Hecho con el corazón"</Navbar.Brand>
                     <Nav className="me-auto">
@@ -27,7 +27,7 @@ const Inicio = () => {
                         <Nav.Link className="a" as={Link} to="/Delibery">Delibery</Nav.Link>
                     </Nav>
                 </Container>
-            </Navbar>
+            </Navbar> 
             <section>
                 <div>
                     <main className="Content">
@@ -49,6 +49,15 @@ const Inicio = () => {
                                                 <Button className="btn" variant="utline-primaory" size="lg" as={ Link } to="/Nosotros">!Haz click¡</Button>
                                     </div>
                             </div>
+                        </section>
+
+                        <section className="ubicacion">
+                                    <div className="t-ub">
+                                        <h1>Servicio al comensal</h1>
+                                            <p >Conoce nuestras instalaciones sanitizadas y con todas las medidas de bioseguridad necesarias para brindarte el mejor servicio</p>
+                                            <Button className="btn" variant="utline-primaory" size="sm" href="https://www.google.com.mx/maps/search/restaurantes+mexicanos+/@19.3586241,-98.9797575,15z/data=!3m1!4b1?hl=es-419">Ubicacion</Button>
+                                            <Button className="btn" variant="utline-primaory" size="sm" as={ Link } to="/Reservar">Reservar</Button>
+                                    </div>
                         </section>
 
                         <section className="art-m">

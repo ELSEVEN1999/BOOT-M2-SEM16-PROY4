@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import style from "../Bolsa/Bolsa.scss";
+import style from "./Bolsa.scss";
 import colibri from "../assets/contenido/colibri.png";
 
 const Bolsa = () => {
@@ -18,6 +18,12 @@ const Bolsa = () => {
                     </Nav>
                 </Container>
             </Navbar>
+
+            <section>
+                <div className="encabezado">
+                    <h1 className="textTitle">Manda tus datos y nos contactaremos contigo, queremos conocerte</h1>
+                </div>
+            </section>
 
             <section>
                 <div>

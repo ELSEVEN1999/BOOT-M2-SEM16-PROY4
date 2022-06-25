@@ -1,13 +1,11 @@
-import React, { useState, Fragment } from "react";
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import React from "react";
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import style from "./Reservar.scss";
 import colibri from "../assets/contenido/colibri.png";
-import style from "./Delibery.scss";
 
-const Delibery = () => {
-
-
-    return(
+const Reservar = () => {
+    return (
         <div>
             <Navbar className="header">
                 <Container className="container">
@@ -19,43 +17,10 @@ const Delibery = () => {
                         <Nav.Link className="a" as={Link} to="/Delibery">Delibery</Nav.Link>
                     </Nav>
                 </Container>
-            </Navbar>
-            <Fragment>
-                <div className="port-pedido">
-                    <h1>!Haz tu pedido¡</h1>
-                    <p>Llena nuestro formulario y en breve te enviaremos el numero de pedido</p>
-                </div>
-                <form className="row m-5">
-                    <div className="col-md-3">
-                        <input
-                        placeholder="Nombre"
-                        className="form-control"
-                        ></input>
-                    </div>
-                    <div className="col-md-3">
-                        <input
-                        placeholder="Apellido"
-                        className="form-control"
-                        ></input>
-                    </div>
-                    <div className="col-md-3">
-                        <input
-                        placeholder="Direccion"
-                        className="form-control"
-                        ></input>
-                    </div>
-                    <div className="col-md-3">
-                        <input
-                        placeholder="Telefono"
-                        className="form-control"
-                        ></input>
-                    </div>
-                    <div className="col-md-3">
-                        <button className="btn" variant="utline-primaory" size="sm">enviar</button>
-                    </div>
-                </form>
-                </Fragment>  
-                
+            </Navbar> 
+            <div className="reservar">
+                <h1 className="tx-r">Reservaciones</h1>
+            </div>
             <section>
                 <div>
                     <footer className="footer">
@@ -84,9 +49,8 @@ const Delibery = () => {
                     </footer>
                 </div>
             </section>
-
         </div>
-    )
-};
+    );
+}
 
-export default Delibery ;
+export default Reservar;

@@ -2,9 +2,9 @@ import React, { useState, Fragment } from "react";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import colibri from "../assets/contenido/colibri.png";
-import style from "./Delibery.scss";
+import style from "./Delivery.scss";
 
-const Delibery = () => {
+const Delivery = () => {
 
 
     return(
@@ -16,7 +16,7 @@ const Delibery = () => {
                         <Nav.Link className="a" as={Link} to="/Inicio">Inicio</Nav.Link>
                         <Nav.Link className="a" as={Link} to="/Menu">Menú</Nav.Link>
                         <Nav.Link className="a" as={Link} to="/Nosotros">Nosotros</Nav.Link>
-                        <Nav.Link className="a" as={Link} to="/Delibery">Delibery</Nav.Link>
+                        <Nav.Link className="a" as={Link} to="/Delivery">Delivery</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
@@ -89,4 +89,4 @@ const Delibery = () => {
     )
 };
 
-export default Delibery ;
+export default Delivery ;

@@ -24,7 +24,7 @@ const Inicio = () => {
                         <Nav.Link className="a" as={Link} to="/Inicio">Inicio</Nav.Link>
                         <Nav.Link className="a" as={Link} to="/Menu">Menú</Nav.Link>
                         <Nav.Link className="a" as={Link} to="/Nosotros">Nosotros</Nav.Link>
-                        <Nav.Link className="a" as={Link} to="/Delibery">Delibery</Nav.Link>
+                        <Nav.Link className="a" as={Link} to="/Delivery">Delivery</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar> 
@@ -91,8 +91,8 @@ const Inicio = () => {
 
                                 <div className="text-d">
                                     <h1 >¡Haz tu pedido!</h1>
-                                        <p >Llena tu registro y realiza tu orden desde nuestra sección Delibery ¡Es muy fácil!</p>
-                                        <Button className="btn_4" variant="utline-primaory"  as= { Link } to="/Delibery">Delibery</Button>
+                                        <p >Llena tu registro y realiza tu orden desde nuestra sección Delivery ¡Es muy fácil!</p>
+                                        <Button className="btn_4" variant="utline-primaory"  as= { Link } to="/Delibery">Delivery</Button>
                                 </div>
                         </section>
                     

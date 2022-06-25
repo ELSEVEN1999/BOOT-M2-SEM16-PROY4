@@ -21,7 +21,7 @@ const Menú = () => {
                         <Nav.Link className="a" as={Link} to="/Inicio">Inicio</Nav.Link>
                         <Nav.Link className="a" as={Link} to="/Menu">Menú</Nav.Link>
                         <Nav.Link className="a" as={Link} to="/Nosotros">Nosotros</Nav.Link>
-                        <Nav.Link className="a" as={Link} to="/Delibery">Delibery</Nav.Link>
+                        <Nav.Link className="a" as={Link} to="/Delivery">Delivery</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

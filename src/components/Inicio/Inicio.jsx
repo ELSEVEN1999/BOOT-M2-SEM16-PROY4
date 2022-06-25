@@ -60,8 +60,8 @@ const Inicio = () => {
                                     </div>
                         </section>
 
-                        <section className="art-m">
-                            <div>
+                        <section>
+                            <div className="art-m">
                                 <div id="im-m">
                                     <img src={ menu } alt="menu" />
                                 </div>
@@ -79,7 +79,7 @@ const Inicio = () => {
                                 <div className="text-promo">
                                         <h1>Menú del dia</h1>
                                             <p>En la compra de un platillo llevate sopa, agua y postre del día por $80 más</p>
-                                            <Button className="btn_3" variant="utline-primaory" size="lg"  as= { Link } to="/Delibery">Promo</Button>
+                                            <Button className="btn_3" variant="utline-primaory" as= { Link } to="/Delibery">Promo</Button>
                                 </div>
                                 
                         </section>

@@ -2,7 +2,7 @@
   "name": "proyecto-4",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://aesthetic-biscotti-e1f360.netlify.app",
+  "homepage":"https://comfy-figolla-c5d6d5.netlify.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

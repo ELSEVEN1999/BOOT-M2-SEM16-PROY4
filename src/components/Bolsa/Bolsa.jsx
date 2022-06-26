@@ -1,10 +1,32 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import style from "./Bolsa.scss";
 import colibri from "../assets/contenido/colibri.png";
 
 const Bolsa = () => {
+
+    const [datos, setDatos] = useState({
+        nombre: '',
+        apellido: '',
+        telefono: '',
+        comentario: '',
+        }
+        )
+     const handleInputChange = (event) => {
+         setDatos({
+             ...datos,
+             [event.target.name] : event.target.value
+         })
+     }  
+     
+     const enviarDatos = (event) => {
+         event.preventDefault();
+         console.log(datos.nombre + '' + datos.apellido + '' + datos.numero + '' + datos.comentario)
+     }
+
+
+
     return (
         <div> 
         <Navbar className="header">
@@ -24,6 +46,56 @@ const Bolsa = () => {
                     <h1 className="textTitle">Manda tus datos y nos contactaremos contigo, queremos conocerte</h1>
                 </div>
             </section>
+
+            <section className="agendar">
+            <div className="agen-t">
+                <h1>Agenda tu visita, la comida es nuestro arte</h1>
+            </div>
+            <Fragment>
+            <div className="container mt-5">
+                <form className="row" onSubmit={enviarDatos}>
+                    <div className="col-md-5">
+                    <input type="text" 
+                    placeholder="Nombre"
+                    className="form-control"
+                    name="nombre"
+                    onChange={handleInputChange}
+
+                    />
+                    </div>
+                    <div className="col-md-5">
+                    <input type="text" 
+                    placeholder="Apellido"
+                    className="form-control"
+                    name="apellido"
+                    onChange={handleInputChange}
+                    />
+                    </div>
+                    <div className="col-md-5">
+                    <input type="number" 
+                    placeholder="Telefono"
+                    className="form-control"
+                    name="telefono"
+                    onChange={handleInputChange}
+                    />
+                    </div>
+
+                    <div className="col-md-5">
+                    <input type="textarea" 
+                    placeholder="Agrega en un comentario breve tus actitudes y habilidades"
+                    className="form-control"
+                    name="comentario"
+                    onChange={handleInputChange}
+                    />
+                    </div>
+
+                    <div className="col-md-5">
+                    <button type="submit" className="btn">Enviar</button>
+                    </div>
+                </form>
+                </div>
+        </Fragment>
+        </section>
 
             <section>
                 <div>

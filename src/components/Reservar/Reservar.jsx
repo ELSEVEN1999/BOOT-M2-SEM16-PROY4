@@ -1,18 +1,32 @@
-import React, { useState } from "react";
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import React, { Fragment, useState } from "react";
+import { useForm } from "react-hook-form";
+import { Navbar, Nav, Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import style from "./Reservar.scss";
 import colibri from "../assets/contenido/colibri.png";
 
 
-const Reservar = ( props ) => {
-    const usersData = [
-        { id: 1, name: 'Tania', username: 'floppydiskette' },
-        { id: 2, name: 'Craig', username: 'siliconeidolon' },
-        { id: 3, name: 'Ben', username: 'benisphere' },
-      ]
-    
-      const [users, setUsers] = useState(usersData);
+const Reservar = () => {
+   const [datos, setDatos] = useState({
+    nombre: '',
+    apellido: '',
+    telefono: '',
+    fecha:'',
+    hora:'',
+    personas:'',
+   }
+   )
+const handleInputChange = (event) => {
+    setDatos({
+        ...datos,
+        [event.target.name] : event.target.value
+    })
+}  
+
+const enviarDatos = (event) => {
+    event.preventDefault();
+    console.log(datos.nombre + '' + datos.apellido + '' + datos.numero + '' + datos.fecha + '' +  datos.hora + '' + datos.personas)
+}
       
     return (
         <div>
@@ -28,49 +42,80 @@ const Reservar = ( props ) => {
                 </Container>
             </Navbar> 
 
-            
             <div className="reservar">
                 <h1 className="tx-r">Reservaciones</h1>
             </div>
-
-            <section className="agenda">
-            <div className="reserv">
-                <h1>Reservar</h1>
+            
+            <section className="agendar">
+            <div className="agen-t">
+                <h1>Agenda tu visita, la comida es nuestro arte</h1>
             </div>
+            <Fragment>
+            <div className="container mt-5">
+                <form className="row" onSubmit={enviarDatos}>
+                    <div className="col-md-5">
+                    <input type="text" 
+                    placeholder="Nombre"
+                    className="form-control"
+                    name="nombre"
+                    onChange={handleInputChange}
 
-            <div className="tabla">
-                <div className="reservaviones">
-                    <h1>Reservaciones</h1>
-                </div>
-                <table >
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Username</th>
-                        <th>Actions</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        {props.users.length > 0 ? (
-                        props.users.map((user) => (
-                        <tr key={user.id}>
-                        <td>{user.name}</td>
-                        <td>{user.username}</td>
-                        <td>
-                        <button className="button muted-button">Edit</button>
-                        <button className="button muted-button">Delete</button>
-                        </td>
-                    </tr>
-                     ))
-                     ) : (
-                        <tr>
-                        <td colSpan={3}>No users</td>
-                      </tr>
-                    )}
-                  </tbody>
-                </table>
-                </div>
-                </section>             
+                    />
+                    </div>
+                    <div className="col-md-5">
+                    <input type="text" 
+                    placeholder="Apellido"
+                    className="form-control"
+                    name="apellido"
+                    onChange={handleInputChange}
+                    />
+                    </div>
+                    <div className="col-md-5">
+                    <input type="number" 
+                    placeholder="Telefono"
+                    className="form-control"
+                    name="telefono"
+                    onChange={handleInputChange}
+                    />
+                    </div>
+                    <div className="col-md-5">
+                    <input type="date" 
+                    placeholder="fecha"
+                    min="2022-6-25"
+                    max="2023-06-25"
+                    className="form-control"
+                    name="fecha"
+                    onChange={handleInputChange}
+                    />
+                    </div>
+                    <div className="col-md-5">
+                    <input type="time" 
+                    placeholder="hora"
+                    min="13:00"
+                    max="22:00"
+                    className="form-control"
+                    name="hora"
+                    onChange={handleInputChange}
+                    />
+                    </div>
+                    <div className="col-md-5">
+                    <select className="form-control" placeholder="personas" onChange={handleInputChange}>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <label>personas</label>
+                    </div>
+                    <div className="col-md-5">
+                    <button type="submit" className="btn">Enviar</button>
+                    </div>
+                </form>
+
+            </div>
+            </Fragment>
+            </section>
 
             <section>
                 <div>

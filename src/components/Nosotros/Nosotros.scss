@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50px;
-    padding: 0% 350px;
+    padding: 0% 10%;
     padding-top: 150px;
     margin: 0;
     margin-top: 10px;
@@ -28,18 +28,18 @@
 }
 
 .equipo {
-    margin: 100px auto;
+    margin: 2% auto;
     width: 100%;
-    height: 300px;
+    height: 500px;
     display: flex;
-    flex-direction: row;
-    padding: 0px 50px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #equi {
-    width: 450px;
-    height: 300px;
-    float: right;
+    width: 350px;
+    height: 250px;
     border-radius: 100px;
     border: #000000 solid 1px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 14px 28px, rgba(0, 0, 0, 0.5) 0px 10px 10px;
@@ -48,8 +48,36 @@
 .equi-text {
     color: #ff6b00;
     font-size: 30px;
-    width: 700px;
+    width: 95%;
     height: 250px;
     text-shadow: #000000bd 0px 1px 1px;
-    padding: 16px 16px;
+    padding: 10px 10px;
+}
+
+#ub-bt {
+    margin: 0% auto;
+    width: 200px;
+}
+
+@media only screen and (max-width: 900px) {
+    .equi-text {
+        font-size: 25px;
+        padding: 10px 10px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .equi-text {
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .ntros-tx {
+        font-size: 15px;
+    }
+
+    #ub-bt {
+        width: 150px;
+    }
 }
